@@ -1,0 +1,33 @@
+-- Types
+-- Int Integer
+-- Float Double
+-- Bool
+-- Char
+
+-- TypeClasses
+-- Eq
+---- 5 = 5 -- True
+---- 'a' = 'a' -- True
+-- Ord
+---- "Abrakadabra" < "Zebra" -- True
+---- 5 `compare` 3 -- GT
+-- Show
+---- show True -- "True"
+---- show 5.334 -- "5.334"
+-- Read
+---- read "True" || False -- True
+---- read "[1,2,3,4]" ++ [3] -- [1,2,3,4,3]
+---- read "5" :: INT -- 5
+---- read "(3, 'a')" :: (Int, Char) -- (3, 'a')
+-- Enum
+---- ['a'..'e'] -- "abced"
+---- [LT .. GT] -- [LT,EQ,GT]
+---- [3 .. 5] -- [3,4,5]
+---- succ 'B' -- 'C'
+-- Bounded
+---- minBound :: Char -- '\1114111'
+---- maxBound :: Bool -- True
+-- Num
+---- 20 :: (Num t) => t
+
+
